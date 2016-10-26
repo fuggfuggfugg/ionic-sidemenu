@@ -1,0 +1,2 @@
+# ionic-sidemenu
+sidemenu bug

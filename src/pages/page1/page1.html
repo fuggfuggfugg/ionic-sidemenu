@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page One</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-menu id="rightMenu" side="right" type="overlay" [content]="view1" >
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Side Menu</ion-title>
+    </ion-toolbar>
+    </ion-header>
+  <ion-content>
+    This is right side menu
+  </ion-content>
+</ion-menu>
+
+<ion-content padding #view1>
+  <h3>Side Menu bug</h3>
+  <ol>
+    <li>Click 'Right Menu' to open menu from the right.</li>
+    <li>Close the right side menu by tapping on the backdrop</li>
+    <li>Open LEFT side menu and click on 'Page One'</li>
+    <li>Try clicking 'Right Menu' to open menu from the right. - Fails</li>
+    <li>Try from Step 2 - 5 : Success *Hopefully* </li>
+  </ol>
+  <button ion-button menuToggle menuToggle="rightMenu" >Right Menu</button>
+</ion-content>
